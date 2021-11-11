@@ -1,15 +1,25 @@
-<div class="index-banner"></div>
+<div class="index-banner">
+<h1 class="index-title">Save any kind of movies</h1>
+</div>
 
 <div class="container">
-<h1>My Lists</h1>
-<%= link_to new_list_path do %>
-        <i class="fas fa-plus-square"></i> Create a movie list
-      <% end %>
 
-  <% @lists.each do |list| %>
-  <div class="list-card">
-    <h2 class="lists">
-      <%= link_to(list.name, list_path(list)) %></h2>
+  <div class="list-first">
+    <h2>My Lists</h2>
+    <%= link_to new_list_path do %>
+      <i class="fas fa-plus-square"></i> Create a movie list
+      <% end %>
   </div>
-  <% end %>
+
+  <div class="list-cards">
+
+    <% @lists.each do |list| %>
+
+      <div class="list-card">
+      <h2>
+      <%= link_to(list.name, list_path(list),class:"lists-names") %></h2>
+      </div>
+    <% end %>
+  </div>
+
 </div>

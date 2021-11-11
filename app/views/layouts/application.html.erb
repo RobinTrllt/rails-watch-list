@@ -15,11 +15,13 @@
   <body>
     <div class="navbar">
       <div class="logo"></div>
-      <p>
+
+      <div>
+      <%= link_to("My Lists", lists_path, class:'my-lists') %>
       <%= link_to new_list_path do %>
         <i class="fas fa-plus-square"></i> New list
       <% end %>
-    <span class="btn" class="back"><%= link_to("My Lists", lists_path) %></span></p>
+      </div>
     </div>
       <%= yield %>
 

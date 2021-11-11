@@ -1,12 +1,22 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
   background: white;
+  padding: 10px 80px;
+  font-size: 20px;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.logo {
+  background-image: url('https://www.tolkiendrim.com/wp-content/uploads/2013/02/Warner-Bros-Logo.jpg');
+  height: 70px;
+  width: 70px;
+  background-position: center;
+  background-size: cover;
+}
+
+.my-lists{
+  padding-right: 20px;
 }

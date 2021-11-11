@@ -7,5 +7,5 @@
       <%= f.button :submit %>
     <% end %>
   </div>
-  <span class="btn" id="back"><%= link_to("Back to Bookmarks", list_bookmarks_path) %></span>
+  <%= link_to("Back to Bookmarks", list_path(@list)) %>
 </div>
