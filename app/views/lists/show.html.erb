@@ -1,0 +1,28 @@
+<div class="show-banner">
+  <h1><%= @list.name %></h1>
+</div>
+<div class="container">
+  <span class="btn" class="add-movie"><%= link_to("Add a movie", new_list_bookmark_path(@list)) %></span>
+  <div class="cards">
+    <% @list.bookmarks.each do |bookmark|%>
+    <div class="movie-card">
+      <div class="movie-image"></div>
+      <div class="first-line">
+        <h3><%=bookmark.movie.title%></h3>
+        <%=bookmark.movie.rating%></h4>
+      </div>
+      <div class="second-line">
+        <p><%=bookmark.movie.overview%></p>
+      </div>
+      <div class="third-line">
+        <p><%=bookmark.comment%></p>
+    <% end %>
+        <%= link_to bookmark_path(bookmark),
+                      method: :delete,
+                      data: { confirm: "Are you sure?" }, class:'remove' do %>
+                      <i class="fas fa-trash-alt"></i>Delete
+                      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
