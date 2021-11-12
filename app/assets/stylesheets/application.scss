@@ -14,12 +14,12 @@
 
 body{
   background: linear-gradient(rgb(255, 255, 255), rgb(160, 160, 160));
+  height: 250vh;
 }
 
 .container {
   width: 1250px;
   margin: 60px auto;
-  height: 100vh;
 }
 
 a:not(.remove, .lists-names, .back){

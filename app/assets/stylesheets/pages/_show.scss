@@ -72,6 +72,12 @@
   text-align: justify;
 }
 
+.overview{
+  height: 60px; /* à modifier selon vos besoins */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .third-line{
   display: flex;
   justify-content: space-between;
