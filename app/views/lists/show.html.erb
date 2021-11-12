@@ -20,7 +20,7 @@
         <p class="overview"><%=bookmark.movie.overview%></p>
       </div>
       <div class="third-line">
-        <p><%=bookmark.comment%></p>
+        <p class="comment">"<%=bookmark.comment%>"</p>
                 <%= link_to bookmark_path(bookmark),
                       method: :delete,
                       data: { confirm: "Are you sure?" }, class:'remove' do %>

@@ -32,6 +32,19 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   width: 1100px;
+  flex-grow: 1;
+}
+
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .movie-card {
@@ -72,8 +85,14 @@
   text-align: justify;
 }
 
-.overview{
+.overview, {
   height: 60px; /* à modifier selon vos besoins */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.comment{
+  height: 40px; /* à modifier selon vos besoins */
   overflow: hidden;
   text-overflow: ellipsis;
 }
