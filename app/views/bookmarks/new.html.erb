@@ -1,11 +1,14 @@
 <div class="container">
-  <h1>Create a bookmark:</h1>
+  <h1>Create a bookmark</h1>
   <div class="form">
     <%= simple_form_for([@list, @bookmark]) do |f| %>
       <%= f.input :comment %>
       <%= f.association :movie %>
-      <%= f.button :submit %>
+      <div class ="new-btns">
+      <span class="submit"><%= f.button :submit %></span> <br>
+      <%= link_to("Back to Bookmarks", list_path(@list), class:"back") %>
+      </div>
     <% end %>
   </div>
-  <%= link_to("Back to Bookmarks", list_path(@list)) %>
+
 </div>

@@ -1,11 +1,13 @@
 <div class="container">
-  <h1>Create a list:</h1>
+  <h1>Create a list</h1>
   <div class="form">
     <%= simple_form_for(@list) do |f| %>
-    <p> <%= f.label :name %>
-    <%= f.text_field :name %>
-    <p> <%= f.submit %> <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br>
+    <div class ="new-btns">
+    <span class="submit"><%= f.button :submit %></span> <br>
+    <%= link_to("Back to Lists", lists_path, class:"back") %>
+    </div>
 <% end %>
   </div>
-  <span class="btn" class="back"><%= link_to("Back to Lists", lists_path) %></span>
 </div>
