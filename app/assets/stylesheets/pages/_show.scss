@@ -31,7 +31,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  width: 1100px;
   flex-grow: 1;
 }
 
@@ -85,16 +84,17 @@
   text-align: justify;
 }
 
-.overview, {
+.overview {
   height: 60px; /* à modifier selon vos besoins */
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .comment{
-  height: 40px; /* à modifier selon vos besoins */
+  height: 50px; /* à modifier selon vos besoins */
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: 6px;
 }
 
 .third-line{
